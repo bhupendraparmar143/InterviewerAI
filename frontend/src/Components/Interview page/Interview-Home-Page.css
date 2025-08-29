@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background: linear-gradient(135deg, #0f0f0f, #1a1a1a); */
+    font-family: 'Orbitron', sans-serif;
+    /* color: #00ffff; */
+}
+
+.homePage-section {
+    padding: 20px;
+}
+
+.my-row {
+    height: 78vh;
+}
+
+
+.subcontainers {
+    margin: auto 17px;
+    padding: 0;
+}
+
+.chat-section {
+    height: 78vh;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 5px white;
+    position: relative;
+    align-items: center;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    max-height: 70vh;
+    width: 80%;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.chat{
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0em;
+}
+
+.user {
+    text-align: right;
+    color: #00ffff;
+    /* Font color  {Bablu }*/
+}
+
+.assistant {
+    text-align: left;
+    color: #ffffff;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    background: #000;
+    border: 1px solid;
+    /* color: #00ffff; */
+    border-radius: 5px;
+}
+
+.mic {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background: radial-gradient(circle, #00ffff88 0%, #000000 70%);
+    border: 2px solid;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+.camera-toggle {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* cursor: pointer; */
+}
+
+@keyframes pulse {
+    0% {
+        /* box-shadow: 0 0 5px #00ffff; */
+        box-shadow: 0 0 5px;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #00ffffaa;
+        /* box-shadow: 0 0 15px; */
+    }
+
+    100% {
+        /* box-shadow: 0 0 5px #00ffff; */
+        box-shadow: 0 0 5px;
+    }
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    /* background: rgba(0, 255, 255, 0.1); */
+}
+
+.avatar-container canvas {
+    border-radius: 14px;
+}
+
+.experience-interview-page{
+    position: relative;
+}
+.speak-btn{
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
